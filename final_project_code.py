@@ -14,7 +14,12 @@ transform = Compose([
     ToTensor()
 ])
 
-dataset = ImageFolder(root='/Users/adelinetan/Documents/ECE176/ECE176_final_project/bcn20000', transform=transform)
+
+# TODO: change this to a .env file for easier use
+
+root ='/Users/adelinetan/Documents/ECE176/ECE176_final_project/bcn20000'
+
+dataset = ImageFolder(root='BCN_20k_test\BCN_20k_train', transform=transform)
 
 print(f"Classes found: {dataset.classes}")   # prints your disease names
 print(f"Total images:  {len(dataset)}")

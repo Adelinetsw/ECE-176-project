@@ -1,0 +1,14 @@
+name: ece176-project
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - matplotlib
+  - pandas
+  - pillow
+  - pip
+  - pip:
